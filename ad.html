@@ -1,0 +1,238 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700" rel="stylesheet">
+
+    <style>
+        .ad-description {
+            margin-top: 24px;
+            font-size: 1.4rem;
+            color: #CCCCCC;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="background: 0% 0% / cover rgb(23, 33, 45) !important; position: absolute !important; inset: 0px !important; filter: none !important; cursor: pointer !important;">
+        <div
+            style="width: 100% !important; height: 100% !important; background: url(&quot;https://telegram.org/img/tgme/pattern.svg?1&quot;) center center / 420px auto repeat !important; mix-blend-mode: initial !important; opacity: 0.2 !important; filter: invert(100%) !important;">
+        </div>
+    </div>
+    <div id="closeBtn" onclick="closeAd()"
+        style="align-items: center !important; border: medium !important; border-radius: 0.8em !important; display: none; flex-direction: column !important; font-size: 0.87em !important; font-weight: bold !important; justify-content: center !important; line-height: 113% !important; padding: 0.5em !important; cursor: pointer !important; white-space: nowrap !important; width: 1em !important; top: 3em !important; right: 1em !important; position: absolute !important; background: rgb(43, 82, 120) !important;">
+        <svg viewBox="0 0 14 14">
+            <path
+                d="M13.3 0.709971C12.91 0.319971 12.28 0.319971 11.89 0.709971L7 5.58997L2.11 0.699971C1.72 0.309971 1.09 0.309971 0.699999 0.699971C0.309999 1.08997 0.309999 1.71997 0.699999 2.10997L5.59 6.99997L0.699999 11.89C0.309999 12.28 0.309999 12.91 0.699999 13.3C1.09 13.69 1.72 13.69 2.11 13.3L7 8.40997L11.89 13.3C12.28 13.69 12.91 13.69 13.3 13.3C13.69 12.91 13.69 12.28 13.3 11.89L8.41 6.99997L13.3 2.10997C13.68 1.72997 13.68 1.08997 13.3 0.709971Z"
+                style="fill: rgb(255, 255, 255) !important;"></path>
+        </svg></div>
+    <div
+        style="align-items: center !important; border: medium !important; border-radius: 0.8em !important; display: none !important; flex-direction: column !important; font-size: 0.87em !important; font-weight: bold !important; justify-content: center !important; line-height: 113% !important; padding: 0.5em !important; cursor: pointer !important; white-space: nowrap !important; width: 1em !important; top: 3em !important; right: 1em !important; position: absolute !important; background: rgb(43, 82, 120) !important;">
+        <svg viewBox="0 0 14 14">
+            <path
+                d="M13.3 0.709971C12.91 0.319971 12.28 0.319971 11.89 0.709971L7 5.58997L2.11 0.699971C1.72 0.309971 1.09 0.309971 0.699999 0.699971C0.309999 1.08997 0.309999 1.71997 0.699999 2.10997L5.59 6.99997L0.699999 11.89C0.309999 12.28 0.309999 12.91 0.699999 13.3C1.09 13.69 1.72 13.69 2.11 13.3L7 8.40997L11.89 13.3C12.28 13.69 12.91 13.69 13.3 13.3C13.69 12.91 13.69 12.28 13.3 11.89L8.41 6.99997L13.3 2.10997C13.68 1.72997 13.68 1.08997 13.3 0.709971Z"
+                style="fill: rgb(255, 255, 255) !important;"></path>
+        </svg></div>
+    <div
+        style="padding: 5px !important; margin: 1% !important; width: 98% !important; height: 98% !important; position: relative !important; pointer-events: none !important;">
+        <div style="width: 100% !important; height: 100% !important;  cursor: pointer !important;">
+            <div
+                style="background: rgb(24, 37, 51) !important; border-radius: 1.8em 1.8em 1.8em 0px !important; box-shadow: rgba(16, 35, 47, 0.15) 0px 1px 2px !important; box-sizing: border-box !important; font-family: Roboto !important; font-size: 10px !important; margin: 0px auto 15px !important; width: 70% !important; max-width: 400px !important; padding: 0.8em !important; position: absolute !important; left: 50% !important; top: 6% !important; transform: translate(-50%, 0px) !important; cursor: pointer !important; color: rgb(255, 255, 255) !important; pointer-events: all !important;">
+                <div
+                    style="align-items: center !important; display: flex !important; justify-content: flex-start !important; padding: 0px 0px 2em !important; position: relative !important;">
+                    <div
+                        style="flex: 0 0 6.4em !important; overflow: hidden !important; position: absolute !important; width: 60px !important; height: 60px !important; border-radius: 50% !important; left: -5.7em !important; bottom: -0.85em !important; background-color: rgba(158, 158, 158, 0.7) !important;">
+                        <img id="avatarImg" src="" style="height: 100% !important;width: 100%;">
+                    </div>
+                    <div style="padding: 0px !important;">
+                        <p class="undefined"
+                            style="color: rgb(255, 255, 255) !important; font-size: 2.2em !important; font-weight: bold !important; letter-spacing: -0.01em !important; line-height: 117% !important; margin: 0px 0px 1em !important; max-height: 63px !important; overflow: hidden !important; text-overflow: ellipsis !important; direction: ltr !important;">
+                            <span class="ad-title">NFTヒーローを召喚せよ！</span></p>
+                        <div
+                            style="display: block !important; margin: 0px !important; padding: 0px !important; font-size: 1.2em !important; line-height: 1em !important; background: none !important; color: rgb(204, 204, 204) !important; border-radius: 2px !important; box-shadow: none !important; position: absolute !important; inset: auto 0.4em 0px auto !important; pointer-events: none !important;">
+                            Ad</div>
+
+
+                        <div data-v-6e129ac7="" class="reward-ad">
+                            <div data-v-6e129ac7="" class="image-container"><img data-v-6e129ac7=""
+                                    style="width: 100%;aspect-ratio: 16 / 9;" id="banner"
+                                    src="https://cdn.jsdelivr.net/gh/dokgame/assets/share/ja/1.png" class="reward-image"
+                                    alt="Ad Preview"></div>
+                            <div data-v-6e129ac7="" class="ad-description">三国の英雄がトークンを生み出す⚔️</div>
+                            <!-- <button data-v-6e129ac7="" class="reward-button">Play for USDT!</button> -->
+                        </div>
+
+                    </div>
+                </div>
+                <div><svg viewBox="0 0 11 20" width="11" height="20" style="position:absolute;left:-9px;bottom:-0.8px;">
+                        <g transform="translate(9 -14)" fill="#182533" fill-rule="evenodd">
+                            <path
+                                d="M-6 16h6v17c-.193-2.84-.876-5.767-2.05-8.782-.904-2.325-2.446-4.485-4.625-6.48A1 1 0 01-6 16z"
+                                transform="matrix(1 0 0 -1 0 49)" fill="#182533"></path>
+                        </g>
+                    </svg></div>
+                <div id="countdown"
+                    style="position: absolute !important; top: -2.8em !important; left: 50% !important; transform: translateX(-50%) !important; font-size: 1.4em !important; color: rgb(255, 255, 255) !important; font-weight: bold !important; background: rgb(43, 82, 120) !important; border-radius: 1.6em !important; padding: 0.3em 1em 0.2em !important;">
+                    00:15</div>
+            </div><span
+                style="display: none; align-items: center !important; flex-direction: column !important; font-size: 1.6em !important; font-weight: 400 !important; justify-content: center !important; line-height: 50% !important; padding: 0.9em 0px !important; cursor: pointer !important; white-space: nowrap !important; max-width: 114px !important; width: 35% !important; bottom: 0px !important; left: 0px !important; position: absolute !important; opacity: 1 !important;"><span
+                    style="animation: 6s linear forwards showButtonTimerText !important; opacity: 1 !important; color: rgb(76, 84, 98) !important; max-width: 100% !important; overflow: hidden !important; text-overflow: ellipsis !important;">Close</span></span>
+            <!-- <div
+                style="align-items: start !important; bottom: -15px !important; display: flex !important; height: 13vh !important; justify-content: center !important; left: -0.8em !important; position: absolute !important; right: -0.8em !important;">
+                <span
+                    style="display: inline-block !important; align-items: center !important; flex-direction: column !important; font-size: 1.6em !important; font-weight: 400 !important; justify-content: center !important; line-height: 50% !important; padding: 0.9em 0px !important; cursor: pointer !important; white-space: nowrap !important; background: rgb(43, 82, 120) !important; color: rgb(255, 255, 255) !important; width: 87% !important; text-align: center !important; overflow: hidden !important; text-overflow: ellipsis !important; border-radius: 0.6em !important; border: medium !important; margin-top: 7px !important;">Continue</span>
+                <div
+                    style="position: absolute !important; top: -6em !important; color: rgb(255, 255, 255) !important; border-radius: 0.8em !important; padding: 0.2em 0.7em 0.3em !important; background: rgba(3, 4, 5, 0.31) !important;">
+                </div>
+                <div
+                    style="top: -4.2em !important; position: absolute !important; display: flex !important; flex-direction: column !important; align-items: center !important; animation-duration: 1.3s !important; animation-name: mainButtonShow !important;">
+                    <span
+                        style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAA91JREFUeF7tnEtO41AQRcO4GbEHxP6Xg9gDE+ieNnLLaVmRk7jAfnV/meYpfvee47KDiB9OeVk38GCdPuFPEcBcgggQAcwbMI+fCRABzBswj58JEAHMGzCPnwkQAcwbMI+fCRABzBswj58JEAHMGzCPnwkQAcwbMI+fCRABzBswj58JEAHMGzCPnwkQAcwbMI+fCRABzBswj58JEAHMGzCPnwkQAcwbMI/fPQEe5/4/TTm0528T4PX97e8S+svTc9teOuRDyd9V+uPr+9vHZfEuElzCn3p4eXqepsHv0TJCCTAX0bWnId2vwZ9z/zqdTn+GbGJxkLayrxWhLAFi5jYBJtCIhRx1BqJmbRXARQJU+FP/7QKoS4AMH0YAVQnQ4UMJoCYBA3w4AVQkYIEPKQC7BEzwYQVglYANPrQAbBIwwocXgEUCVvgUAqBLwAyfRgBUCdjhUwmAJoECfDoBUCRQgU8pQLcESvBpBeiSQA0+tQCjJVCETy/AKAlU4UsIcLQEyvBlBDhKAnX4UgLsLYEDfDkB9pLABb6kAD+VwAm+rADflcANvrQAVQkc4csLsFUCV/gWAtyTYHr/2svhx6rdPwwZ9vv4W2f5mgCD4A/Lf03yNgEugYwofKsEHXsZccw1CboEaHs+wD0JRoBY20OeDzDr2QVgOnzzsfN8gPOI6gDRcczlSB5xfKRLwL+9AHz9ms666XX4o1kAsq7eB3bdA/zfDGoxt74eVt9DztguAMgkqDLdvB4ZPtQfgtCL2kx8sZAhE8QEOHfGUNhWEViyQAmgcjlggQ91CVieWUwFXk4Etr3DTQDmywEbfNgJwCgBI3x4AVjuCVjhUwiALgEzfBoBUCVgh08lAJoECvDpBECRQAU+pQDdEijBpxWgSwI1+NQCjJZAET69AKMkUIUvIcDREijDlxHgKAnU4UsJsLcEDvDlBNhLAhf4kgL8VAIn+LICfFcCN/jSAlQlcIQvL8BWCVzhWwhwT4Lp/Wuvrp9r3drT3u/B/k/g3kFvneVrx3KAbzMBzoC3SuAC306ALZcDJ/iWAtySwA2+rQBrEjjCtxZgvi8Y9nyAvW9q9/o8m28BexWm9jkRQI1oMU8EKBamtjwCqBEt5okAxcLUlkcANaLFPBGgWJja8gigRrSYJwIUC1NbHgHUiBbzRIBiYWrLI4Aa0WKeCFAsTG15BFAjWswTAYqFqS2PAGpEi3kiQLEwteURQI1oMU8EKBamtjwCqBEt5okAxcLUlkcANaLFPBGgWJja8gigRrSYJwIUC1NbHgHUiBbzRIBiYWrLI4Aa0WKeCFAsTG35F4PSGp9Wh687AAAAAElFTkSuQmCC&quot;) 9px 10px / 27px auto no-repeat rgb(45, 79, 55) !important; color: rgb(217, 238, 219) !important; padding: 12px 20px 12px 40px !important; border-radius: 0.9em !important; margin-top: 10px !important; font-size: 16px !important;">Click
+                        to get the reward!</span>
+                    <div
+                        style="position: relative !important; top: -8px !important; width: 1em !important; height: 1em !important; transform: rotate(132deg) skewX(-9deg) scale(1, 0.966) !important; border-top-right-radius: 30% !important; background: rgb(45, 79, 55) !important;">
+                    </div>
+                </div>
+                <style>
+                    @keyframes mainButtonShow {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(-20px) scale(.1);
+                        }
+
+                        90% {
+                            opacity: 0;
+                            transform: translateY(-20px) scale(.1);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0) scale(1);
+                        }
+                    }
+                </style>
+            </div> -->
+        </div>
+    </div>
+    <style>
+        @keyframes show {
+            0% {
+                transform: translateX(120%);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding-top: 0px;
+            width: 100%;
+            font: 16px/1.4 medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Montserrat, "Open Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: #414a59;
+            user-select: none;
+            overflow: hidden;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            text-size-adjust: none;
+            background: 0% 0% / cover rgb(23, 33, 45) !important;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <script>
+        function init() {
+            let countdownElement = document.getElementById('countdown');
+            let timeLeft = 15; // in seconds
+
+            // document.getElementById('closeBtn').style.display = 'block';
+            let countdownInterval = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    countdownElement.style.display = 'none';
+                    document.getElementById('closeBtn').style.display = 'block';
+                } else {
+                    let minutes = Math.floor(timeLeft / 60);
+                    let seconds = timeLeft % 60;
+                    countdownElement.textContent = `00:${seconds < 10 ? '0' : ''}${seconds}`;
+                    timeLeft--;
+                }
+            }, 1000);
+
+            let titles = [
+                "NFTヒーローを召喚せよ！",
+                "NFT英雄で稼げるタワーディフェンス！",
+                "NFT×三国志🔥",
+                "NFTヒーローがあなたの資産に！",
+                "自分だけのNFT部隊を作ろう！",
+                "勝利は俺が掴む！",
+                "暴れて稼げ！",
+                "スピードこそ力だ！",
+                "天下はNFTで取る！",
+                "私をNFTで召喚して♡"
+            ];
+            let descriptions = [
+                "三国の英雄がトークンを生み出す⚔️",
+                "集めて育てて、報酬を手に入れよう💰",
+                "戦って勝利すればトークン獲得！",
+                "限定英雄をゲットして稼ごう💎",
+                "英雄を指揮して報酬をGET⚔️",
+                "報酬もお前のものだ⚔️",
+                "NFTヒーローで戦場を支配せよ🔥",
+                "NFT英雄でリアル報酬を掴め💎",
+                "戦略と投資、両方で勝て💰",
+                "美しき英雄がトークンを生む✨"
+            ];
+            let randomTitleIndex = Math.floor(Math.random() * titles.length);
+            document.querySelector('.ad-description').innerText = descriptions[randomTitleIndex];
+            document.querySelector('.ad-title').innerText = titles[randomTitleIndex];
+
+            let avatars = [];
+            let banners = [];
+            for (let i = 1; i < 10; i++) {
+                let url = `https://cdn.jsdelivr.net/gh/dokgame/assets/avatar/avatar${i}.png`;
+                avatars.push(url);
+            }
+            for (let i = 1; i < 8; i++) {
+                let url = `https://cdn.jsdelivr.net/gh/dokgame/assets/share/ja/${i}.png`;
+                banners.push(url);
+            }
+
+            let avatarImg = document.getElementById('avatarImg');
+            let randomIndex = Math.floor(Math.random() * avatars.length);
+            avatarImg.src = avatars[randomIndex];
+
+            let bannerImg = document.getElementById('banner');
+            randomIndex = Math.floor(Math.random() * banners.length);
+            bannerImg.src = banners[randomIndex];
+        }
+
+        window.onload = init;
+
+        function closeAd() {
+            // Send a message to the parent window to close the iframe
+            // window.parent.postMessage('closeAdIframe', '*');
+            console.log("closeAdIframe");
+            window.closeWindow && window.closeWindow();
+        }
+    </script>
+</body>
+
+</html>
